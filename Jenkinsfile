@@ -5,13 +5,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'javac Get.java'
+                bat 'javac Put.java'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'java Get'
+                bat 'java Put'
             }
         }
 
